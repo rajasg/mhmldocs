@@ -1,26 +1,18 @@
 Michigan Hackers Machine Learning
 ==================================
-Hello There, General Kenobi
 
-Foundations of Machine Learning
-================================
-Introduction to Machine Learning::
-
-    print 'hello'
-    >> hello
-
-Foundations of Machine Learning
-Linear Regression
+Python
+******
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
+   0_1_1
 
+Machine Learning
+*****************
 
-Indices and tables
-==================
+.. toctree::
+   :maxdepth: 2
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   1_1_1
