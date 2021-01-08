@@ -19,11 +19,11 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = 'mhmldocs'
-copyright = '2021, Rajas Gupta, Vijay Sharma'
-author = 'Rajas Gupta, Vijay Sharma'
+copyright = '2021, Rajas Gupta'
+author = 'Rajas Gupta'
 
 # The full version, including alpha/beta/rc tags
-release = '0.1'
+release = '1.0'
 
 
 # -- General configuration ---------------------------------------------------
