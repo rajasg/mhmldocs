@@ -1,18 +1,16 @@
 Michigan Hackers Machine Learning
 ==================================
 
-Python
-******
+.. toctree::
+   :caption: Python
+   :maxdepth: 2
+   :glob:
+
+   Python/*
 
 .. toctree::
+   :caption: Machine Learning
    :maxdepth: 2
+   :glob:
 
-   0_1_1
-
-Machine Learning
-*****************
-
-.. toctree::
-   :maxdepth: 2
-
-   1_1_1
+   ML/*
