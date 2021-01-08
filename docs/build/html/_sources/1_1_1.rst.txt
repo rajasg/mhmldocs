@@ -1,8 +1,0 @@
-Introduction to Machine Learning
-==================================
-
-Defining Machine Learning
--------------------------
-
-**Machine Learning** is a subset of artificial intelligence where the computer independently learns from data and performs tasks without any explicit instructions.
-
