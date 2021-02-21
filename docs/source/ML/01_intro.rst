@@ -90,11 +90,11 @@ This application of machine learning can significantly aid early diagnosis and s
 Automatically Flagging Offensive Comments
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. image:: Images/01_04.png
+.. image:: Images/01_05.png
   :width: 400
-  :alt: Tumor in MRI Scan
+  :alt: text
   :align: center
-  :target: http://vision.cse.psu.edu/research/tumorDetect/index.shtml
+  :target: https://media.npr.org/assets/img/2019/06/27/twitter-screen-eb1088a93004926934f14ad24b0a3d3715193915-s800-c85.png
 
 This is accomplished using *text classification*, which is a supervised learning problem where comments with words labeled as offensive are flagged.
 This use of machine learning allows social media platforms to control hate speech and misinformation.
