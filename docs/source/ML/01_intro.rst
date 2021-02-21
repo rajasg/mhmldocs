@@ -1,8 +1,11 @@
 Introduction to Machine Learning
 ==================================
 
+
+
 Defining Machine Learning
 -------------------------
+
 
 **Machine Learning** utilizes mathematics, statistics, and computer science to shape and analyze data as to make predictions and/or decisions.
 
@@ -17,15 +20,23 @@ Defining Machine Learning
 *“Machine Learning is the field of study that gives computers the ability to learn without being explicitly programmed.”*
 - Arthur Samuel, 1959
 
+
+
+
 **Artificial Intelligence** is an umbrella term for a machine capable of perception, logic, or learning. Machine learning is a subset of Artificial Intelligence that specializes in learning from data.
 
 **Deep Learning** is a subset of machine learning that uses artificial neural  networks which are a cascade of layers of processing units to extract features and learn from data.
+
+
 
 .. image:: Images/01_02.png
   :width: 600
   :alt: ML Related Fields
   :align: center
   :target: https://dxchange.io/blogs/artificial-intelligence
+
+
+
 
 Types of Machine Learning
 -------------------------
@@ -59,6 +70,8 @@ Reinforcement Learning
 
 In **reinforcement learning**, a machine learning model is trained using data gathered from the *environment* where its goal is to maximize *rewards* and minimize *penalties*. The *environment* of a machine learning model is defined as inputs from sensors in a real or virtual world. Applications include training a Game AI to play chess and training a robot to walk.
 
+
+
 Topics in Machine Learning
 ---------------------------------
 
@@ -71,6 +84,8 @@ Topics in Machine Learning
 **Recommender Systems** seek to predict the "rating" or "preference" a user would give to an item. They are primarily used in commercial applications.
 
 **Autonomous Robotics** is a subfield of artificial intelligence that mainly uses computer vision and reinforcemtn learning to train robots to performs behaviors or tasks with a high degree of autonomy.
+
+
 
 Applications of Machine Learning
 ---------------------------------
