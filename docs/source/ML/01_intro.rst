@@ -82,7 +82,7 @@ Detecting Tumors in MRI Scans
   :width: 400
   :alt: Tumor in MRI Scan
   :align: center
-  :target: http://vision.cse.psu.edu/research/tumorDetect/index.shtml
+  :target: https://vision.cse.psu.edu/research/tumorDetect/index.shtml
 
 Brain tumors can be detected using *semantic segmentation*, where each pixel in the MRI Scan is labeled to a class, typically using *convolutional neural networks (CNNs)*. 
 This application of machine learning can significantly aid early diagnosis and surgical planning.
@@ -98,3 +98,18 @@ Automatically Flagging Offensive Comments
 
 This is accomplished using *text classification*, which is a supervised learning problem where comments with words labeled as offensive are flagged.
 This use of machine learning allows social media platforms to control hate speech and misinformation.
+
+Detecting Credit Card Fraud
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: Images/01_06.png
+  :width: 600
+  :alt: text
+  :align: center
+  :target: https://www.paymentsjournal.com/credit-card-fraud-stories-cant-make-stuff-up/
+
+*Anomaly detection* is a step in data mining that identifies data points, events, and/or observations that deviate from a dataset's normal behavior.
+This is used to determine if suspicious activity is happening on someone's credit account.
+This use of machine learning prevents hackers from misusing one’s credit cards.
+
+
