@@ -128,3 +128,42 @@ This is used to determine if suspicious activity is happening on someone's credi
 This use of machine learning prevents hackers from misusing one’s credit cards.
 
 
+Challenges in Machine learning
+---------------------------------
+
+Quantity and Quality of Data
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Machine learning models require a lot of data to work accurately. Even for very simple problems you typically need thousands of examples, and for complex problems such as image or speech recognition you may need millions of examples. Collecting and processing such large amounts of data requires a lot of computer power and time.
+
+The quality of data also matters when training models. Training data should be unbiased and include a wide majority of possibilities to create a generalizable model.
+
+
+Bias-Variance Tradeoff
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**Bias** is a measure of error induced by our model oversimplifying the true nature of our data.
+
+**Variance** measures how much an individual data point can shape our model.
+
+High bias and low variance means your model is *underfitting* the training data, so is *not accurate*. 
+
+Low bias and high variance means your model is *overfitting* the training data, so is *too specific and not generalizable*. 
+
+Ultimately, we want to find a balance between bias and variance which makes our model predict new cases to its best ability
+
+Underfitting vs Overfitting
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: Images/01_07.png
+  :width: 600
+  :alt: text
+  :align: left
+  :target: https://docs.aws.amazon.com/machine-learning/latest/dg/model-fit-underfitting-vs-overfitting.html
+
+Model Selection 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In an ML project you gather data in a training set, and you feed the training set to a learning 
+algorithm. If the algorithm is model-based, it first fits the model to the training set, and then it will be able to make good predictions on new test cases.
+
+Determining which model to choose for the given data can be difficult without having a general understanding of what the data is about and what your goal is. 
+There is no perfect model that works on all datasets, every data set is unique and so its model selection should also be unique.
