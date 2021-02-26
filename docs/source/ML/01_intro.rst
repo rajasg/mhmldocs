@@ -119,7 +119,7 @@ Detecting Credit Card Fraud
 
 .. image:: Images/01_06.png
   :width: 600
-  :alt: text
+  :alt: Credit Card
   :align: center
   :target: https://www.paymentsjournal.com/credit-card-fraud-stories-cant-make-stuff-up/
 
@@ -156,9 +156,10 @@ Underfitting vs Overfitting
 
 .. image:: Images/01_07.png
   :width: 600
-  :alt: text
-  :align: left
+  :alt: fitting
+  :align: center
   :target: https://docs.aws.amazon.com/machine-learning/latest/dg/model-fit-underfitting-vs-overfitting.html
+
 
 Model Selection 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
