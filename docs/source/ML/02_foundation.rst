@@ -30,7 +30,7 @@ Gathering Data
 
 The first step in data preparation is finding an already available dataset that matches your problem statement. Fortunately, there are thousands:
 
-**- Popular open data repositories:**
+- **Popular open data repositories:**
 
        UC Irvine Machine Learning Repository
     
@@ -38,7 +38,7 @@ The first step in data preparation is finding an already available dataset that 
 
        Amazon’s AWS datasets
 
-**- Meta portals** (they list open data repositories):
+- **Meta portals** (they list open data repositories):
 
         Data Portals
 
@@ -109,11 +109,11 @@ Additionally, the supervised techniques can be further divided into models that 
 
 There are different common feature selection use cases we may encounter in a predictive modeling project, such as:
 
-        -**Categorical** inputs for a **classification** target variable.
+        - **Categorical** inputs for a **classification** target variable.
 
-        -**Numerical** inputs for a **classification** target variable.
+        - **Numerical** inputs for a **classification** target variable.
 
-        -**Numerical** inputs for a **regression** target variable.
+        - **Numerical** inputs for a **regression** target variable.
 
 .. image:: Images/02_02.png
   :width: 600
@@ -122,4 +122,133 @@ There are different common feature selection use cases we may encounter in a pre
   :target: https://machinelearningmastery.com/feature-selection-with-real-and-categorical-data/
 
   
+Data Transformation
+^^^^^^^^^^^^^^^^^^^^
+**Data transforms** are used to change the type or distribution of data variables.This is a large umbrella of different techniques and they may be just as easily applied to input and output variables.
+
+        - **Numeric Data Type:** Number values.
+
+                - **Integer:** Integers with no fractional part.
+                
+                - **Real:** Floating point values.
+
+        - **Categorical Data Type:** Label values.
+
+                - **Ordinal:** Labels with a rank ordering.
+
+                - **Nominal:** Labels with no rank ordering.
+
+                - **Boolean:** Values True and False.
+
+
+Data Transformation Techniques
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+There are a few common techniques to transform data:
+
+        - *Discretization Transform:* Encode a numeric variable as an ordinal variable.
+
+        - *Ordinal Transform:* Encode a categorical variable into an integer variable.
+
+        - *One-Hot Transform:* Encode a categorical variable into binary variables.
+
+        - *Normalization Transform:* Scale a variable to the range 0 and 1.
+
+        - *Standardization Transform:* Scale a variable to a standard Gaussian.
+
+Data Transformation
+^^^^^^^^^^^^^^^^^^^^^^
+**Data transforms** are used to change the type or distribution of data variables.This is a large umbrella of different techniques and they may be just as easily applied to input and output variables.
+        - **Numeric Data Type:** Number values.
+                - *Integer:* Integers with no fractional part.
+                - *Real:* Floating point values.
+        - **Categorical Data Type:** Label values.
+                - *Ordinal:* Labels with a rank ordering.
+                - *Nominal:* Labels with no rank ordering.
+                - *Boolean:* Values True and False.
+
+Feature Engineering
+^^^^^^^^^^^^^^^^^^^^^^^^^
+**Feature engineering** refers to the process of creating new input variables from the available data.
+
+Engineering new features is highly specific to your data and data types.This specialization makes it a challenging topic to generalize to general methods.Nevertheless, there are some techniques that can be reused, such as:
+
+        - Adding a **boolean flag** variable for some state.
+        - Adding a group or global summary statistic, such as a **mean**.
+        - Adding **new variables** for each component of a compound variable, such as a date-time.
+        - **Polynomial Transform:** Create copies of numerical input variables that are raised to a power.
+
+Model Selection
+-------------------
+
+Introduction
+^^^^^^^^^^^^^^^
+
+Given easy-to-use machine learning libraries like scikit-learn and Keras, it is straightforward to fit many different machine learning models on a given predictive modeling dataset.
+
+So the challenge of applied machine learning, becomes how to choose among a range of different models that you can use for your problem.
+
+Naively, you might believe that performance is sufficient, but you should consider other concerns, such as **how long** the model takes to train or **how easy** it is to explain to others, and **how robust** you model is for other applications.
+
+
+Defining Model Selection 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Model selection** is the process of selecting one final machine learning model from among a collection of candidate machine learning models for a training dataset.
+
+Model selection is a process that can be applied both across different types of models (e.g. logistic regression, SVM, KNN, etc.) and across models of the same type configured with different model hyperparameters (e.g. different number of epochs for a CNN).
+
+**Model selection** is the process of choosing one of the models as the final model that addresses the problem.
+
+Consideration
+^^^^^^^^^^^^^^^
+
+Things to consider when selecting a model:
+
+        - A model that meets the requirements and constraints of the project.
+        - A model that is sufficiently skillful given the time and resources available.
+        - A model that is skillful as compared to naive models.
+        - A model that is skillful relative to other tested models.
+        - A model that is skillful relative to the state-of-the-art.
+
+Model Selection Techniques
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The best approach to model selection requires “sufficient” data, which may be nearly infinite depending on the complexity of the problem.
+
+In this ideal situation, we would split the data into training, validation, and test sets, then **fit** candidate models on the training set, **evaluate** and select them on the validation set, and **report** the performance of the final model on the test set.
+
+This is impractical on most predictive modeling problems given that we rarely have sufficient data, or are able to even judge what would be sufficient.
+
+Model Selection Techniques
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Instead, there are two main classes of techniques to approximate the ideal case of model selection:
+
+        - **Probabilistic Measures:** Choose a model via in-sample error and complexity.
+
+        - **Resampling Methods:** Choose a model via estimated out-of-sample error.
+
+Probabilistic Measures
+^^^^^^^^^^^^^^^^^^^^^^^
+
+**Probabilistic measures** involve analytically scoring a candidate model using both its performance on the training dataset and the complexity of the model.
+
+It is known that training error is optimistically biased, and therefore is not a good basis for choosing a model. The performance can be penalized based on how optimistic the training error is believed to be. This is typically achieved using algorithm-specific methods, often linear, that penalize the score based on the complexity of the model.
+
+A model with fewer parameters is less complex, and because of this, is preferred because it is likely to generalize better on average.
+
+Resampling Methods
+^^^^^^^^^^^^^^^^^^^
+
+**Resampling methods** seek to estimate the performance of a model (or more precisely, the model development process) on out-of-sample data.
+
+This is achieved by splitting the training dataset into sub train and test sets, fitting a model on the sub train set, and evaluating it on the test set. This process may then be repeated multiple times and the mean performance across each trial is reported.
+
+Three common resampling model selection methods include:
+        - Random train/test splits.
+        - Cross-Validation (k-fold)
+        - Bootstrap.
+
+
 
