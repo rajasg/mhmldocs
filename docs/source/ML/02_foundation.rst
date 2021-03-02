@@ -247,8 +247,68 @@ This is achieved by splitting the training dataset into sub train and test sets,
 
 Three common resampling model selection methods include:
         - Random train/test splits.
+         - Bootstrap.
         - Cross-Validation (k-fold)
-        - Bootstrap.
+       
+
+.. image:: Images/02_03.png
+  :width: 600
+  :alt: Cross-validation
+  :align: center
+  :target: https://en.wikipedia.org/wiki/Cross-validation_(statistics)
 
 
+Model Evaluation 
+-----------------
+
+Model Evaluation
+^^^^^^^^^^^^^^^^^^
+
+**Model evaluation** aims to estimate the generalization accuracy of a model on future test data.
+
+Methods for evaluating a model’s performance are divided into 2 categories: holdout and Cross-validation. Both methods use a validation set (i.e data not seen by the model) to evaluate model performance.
+
+It’s not recommended to use the data we used to build the model to evaluate it. This is because our model will simply remember the whole training set, and will therefore always predict the correct label for any point in the training set.
+
+Holdout vs k-fold
+^^^^^^^^^^^^^^^^^^^
+
+.. image:: Images/02_04.png
+  :width: 600
+  :alt: holdout vs k-fold
+  :align: center
+  :target: https://www.h2o.ai/community/glossary/model-validation-hold-out-cross-validation
+
+Performance Metrics
+^^^^^^^^^^^^^^^^^^^^^^
+
+**Performance Metrics** are probabilistic measures of the model that you can calculate to determining how “good” your current model is. Common performance metrics are:
+
+                - Classification Accuracy
+
+                - Sensitivity/Specificity
+
+                - Area Under Curve
+
+                - Precision/Recall
+                
+                - F1 Score
+
+The Confusion Matrix
+^^^^^^^^^^^^^^^^^^^^^
+.. image:: Images/02_05.png
+  :width: 600
+  :alt: confusion matrix
+  :align: right 
+  :target: https://www.dataschool.io/simple-guide-to-confusion-matrix-terminology/
+
+                - True Positives : The cases in which we predicted YES and the actual output was also YES.
+
+                - True Negatives : The cases in which we predicted NO and the actual output was NO.
+                
+                - False Positives : The cases in which we predicted YES and the actual output was NO.
+
+                - False Negatives : The cases in which we predicted NO and the actual output was YES.
+
+Classification Accuracy
 
