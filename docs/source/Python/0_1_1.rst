@@ -1,3 +1,35 @@
-Introduction to Python
+Terminal & Git Tuorial
 ==================================
 
+Python Setup
+^^^^^^^^^^^^^
+
+Install Anaconda at https://www.anaconda.com/products/individual#Downloads.
+
+What is Git?
+^^^^^^^^^^^^^^
+
+Most commonly used version control system for tracking changes in code files during software development.
+
+Designed to coordinate work among programmers. Stores edit history of files.
+
+We will be using **Github**, basically Google Drive for software, to collaborate on projects and keep track of progress.
+
+What is Terminal?
+^^^^^^^^^^^^^^^^^^^
+
+Provides a command-line interface to the operating system which allows you to DIVE files and applications. Git commands are run on terminal.
+
+or MacOC/Linux, terminal is pre-installed as an application.
+
+For Windows, follow this setup tutorial provided on EECS 280 class: https://eecs280staff.github.io/p1-stats/setup_wsl.html.
+
+(Windows is a bit more nit-picky with terminal because it isn’t a Unix OS, but we shouldn’t have any problems with Git on the windows terminal)
+
+Useful Terminal Commands
+^^^^^^^^^^^^^^^^^^^^^^^^^
+.. image:: Images/01_01.png
+  :width: 600
+  :alt: common command lines 
+  :align: right 
+  :target: https://docs.google.com/presentation/d/1JLjujMMOFaNLXsZNBAQ_wrMrMtuELANESmwuxjJVaz8/edit#slide=id.g990a1e4e1f_0_58
