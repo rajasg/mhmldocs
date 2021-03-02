@@ -28,7 +28,7 @@ For Windows, follow this setup tutorial provided on EECS 280 class: https://eecs
 
 Useful Terminal Commands
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-.. image:: Images/01_01.png
+.. image:: Images2/01_01.png
   :width: 600
   :alt: common command lines 
   :align: right 
