@@ -1,3 +1,3 @@
 # [Michigan Hackers Machine Learning Notes](https://docs.mhml.dev)
 
-by Rajas Gupta and Vijay Sharma
+by Rajas Gupta and Jiawen Fan
